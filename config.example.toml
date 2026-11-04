@@ -1,0 +1,18 @@
+[plugin]
+enabled = false
+config_version = "0.1.0"
+dry_run = true
+bot_account_id = ""
+private_user_ids = []
+group_ids = []
+check_interval_minutes = 30
+private_idle_minutes = 60
+group_idle_minutes = 25
+cooldown_minutes = 180
+quiet_start_hour = 23
+quiet_end_hour = 8
+chance = 0.15
+miss_increment = 0.05
+max_miss_bonus = 0.2
+private_daily_max = 2
+group_daily_max = 1
