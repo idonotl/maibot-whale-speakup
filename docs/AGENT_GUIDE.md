@@ -28,6 +28,10 @@ QQ 收发由外部适配器承担。需要 QQ 的功能必须配置适配器并�
 
 已声明入口（具体参数、返回结构和可见性以各 Python 文件及 `webui.json` 为准；不是所有 API 都对其他插件公开）：
 
+- `HookHandler`：`maisaka.planner.before_request`（plugin.py）
+- `HookHandler`：`maisaka.replyer.before_request`（plugin.py）
+- `HookHandler`：`maisaka.replyer.before_model_request`（plugin.py）
+- `HookHandler`：`maisaka.reply.before_post_process`（plugin.py）
 - `API`：`status`（plugin.py）
 - `API`：`inspect_targets`（plugin.py）
 - `API`：`probe_isolated_webui`（plugin.py）
@@ -67,6 +71,7 @@ QQ 收发由外部适配器承担。需要 QQ 的功能必须配置适配器并�
 
 交付时写明：修改文件、依赖和环境要求、配置步骤、测试结果、外网/QQ未验证项、如何关闭和回滚。对于不确定的推断明确标记，不把尝试说成成功。
 
+<!-- 以下由发布整理追加 -->
 ## 本插件的机制与实际使用
 
 必须有支持 `maisaka.proactive.trigger` 的宿主以及能响应 `adapter.napcat.system.get_status` 和 `get_login_info` 的 QQ 适配器。不能只要 NapCat 进程存在就视为在线；必须核对登录机器人号。

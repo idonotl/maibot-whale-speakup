@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "id": "local.whale-speakup",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "name": "主动搭话 · 麦麦适配版",
   "description": "在授权的私聊和群聊中本地抽签，满足时机后由麦麦自行决定是否主动开口。",
   "author": {
